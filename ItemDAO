@@ -1,0 +1,48 @@
+import org.springframework.stereotype.Repository;
+
+import com.example.task.Item;
+import com.example.task.Items;
+
+@Repository
+
+public class ItemDAO {
+	
+private static Items list = new Items();
+	
+	static
+	{
+		list.getItemList().add(new Item(1, 20000, "Shirt", "Ajio"));
+		list.getItemList().add(new Item(2, 10000, "Shoes", "Trickers"));
+		list.getItemList().add(new Item(3, 25000, "Shirt", "Allen Solly"));
+		list.getItemList().add(new Item(4, 5000, "Shoes","Tredair"));
+		list.getItemList().add(new Item(5, 16000, "Jeans","Tiger of Sweden"));
+		list.getItemList().add(new Item(6, 15000, "Shirt", "Ajio"));
+		list.getItemList().add(new Item(7, 9000, "Shoes","Tredair"));
+		list.getItemList().add(new Item(8, 15000, "Shoes", "Trickers"));
+		list.getItemList().add(new Item(9, 13000, "Jeans","Tiger of Sweden"));
+		list.getItemList().add(new Item(10, 10000, "Shirt", "Allen Solly"));
+		list.getItemList().add(new Item(11, 28000, "Shirt", "Ajio"));
+		list.getItemList().add(new Item(12, 18000, "Jeans","Tiger of Sweden"));
+		list.getItemList().add(new Item(13, 22000, "Shirt", "Allen Solly"));
+		list.getItemList().add(new Item(14, 5000, "Shoes","Tredair"));
+		list.getItemList().add(new Item(15, 21000, "Shirt", "Ajio"));
+		list.getItemList().add(new Item(16, 20000, "Shoes","Tredair"));
+		list.getItemList().add(new Item(17, 17000, "Jeans","Tiger of Sweden"));
+		list.getItemList().add(new Item(18, 11000, "Shirt", "Ajio"));
+		list.getItemList().add(new Item(19, 23000, "Shoes","Tredair"));
+		list.getItemList().add(new Item(20, 15000, "Shirt", "Allen Solly"));
+	}
+	
+	
+	public Items getAllItems()
+	{
+		return list;
+	}
+
+	
+	public void addItem(Item item)
+	{
+		list.getItemList().add(item);
+	}
+
+}
