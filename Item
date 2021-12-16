@@ -1,0 +1,62 @@
+public class Item { //entity
+	
+public Item() {}
+	
+	public Item(Integer itemId, Integer price, String description, String brand)
+	{
+		super();
+		this.itemId = itemId;
+		this.price = price;
+		this.description = description;
+		this.brand = brand;
+	}
+	
+	private Integer itemId;
+	private Integer price;
+	private String description;
+	private String brand;
+	
+	@Override
+	
+	public String toString()
+	{
+		return "Item [itemId="
+				+ itemId + ", price="
+				+ price + ", description="
+				+ description + ", brand="
+				+ brand + "]";
+	}
+
+	public Integer getItemId() {
+		return itemId;
+	}
+
+	public void setItemId(Integer itemId) {
+		this.itemId = itemId;
+	}
+
+	public Integer getPrice() {
+		return price;
+	}
+
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+}
